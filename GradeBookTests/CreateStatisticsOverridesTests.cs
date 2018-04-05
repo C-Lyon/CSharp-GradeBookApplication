@@ -34,7 +34,14 @@ namespace GradeBookTests
 
             MethodInfo method = rankedGradeBook.GetMethod("CalculateStatistics");
             var output = string.Empty;
-            Console.Clear();
+            try
+            {
+                Console.Clear();
+            }
+            catch (Exception err)
+            {
+
+            }
             try
             {
                 //Test that message was written to console when there are less than 5 students.
@@ -84,7 +91,14 @@ namespace GradeBookTests
 
             //Test that the base calculate statistics did run when there were 5 or more students.
             output = string.Empty;
-            Console.Clear();
+            try
+            {
+                Console.Clear();
+            }
+            catch (Exception err)
+            {
+
+            }
 
             try
             {
@@ -141,7 +155,14 @@ namespace GradeBookTests
             gradeBook.GetType().GetProperty("Students").SetValue(gradeBook, students);
 
             var output = string.Empty;
-            Console.Clear();
+            try
+            {
+                Console.Clear();
+            }
+            catch (Exception err)
+            {
+
+            }
             try
             {
                 //Test that message was written to console when there are less than 5 students.
@@ -191,7 +212,14 @@ namespace GradeBookTests
 
             //Test that the base calculate statistics did run when there were 5 or more students.
             output = string.Empty;
-            Console.Clear();
+            try
+            {
+                Console.Clear();
+            }
+            catch (Exception err)
+            {
+
+            }
 
             try
             {
